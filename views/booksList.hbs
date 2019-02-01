@@ -1,4 +1,6 @@
 <h1>BOOKS</h1>
 {{#each booksList}}
-    <p><a href="book/{{this._id}}">{{this.author}} - {{this.title}}</a></p>
+    <p><a href="book/{{this._id}}">{{this.author}} - {{this.title}}</a> # <a href="/books/edit/{{this._id}}">Edit</a> # <a href="/books/del/{{this._id}}">Delete</a></p>
 {{/each}}
+
+<a href="/books/add">ADD</a>
